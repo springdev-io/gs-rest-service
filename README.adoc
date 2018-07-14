@@ -54,7 +54,7 @@ include::https://raw.githubusercontent.com/springdev-io/getting-started-macros/m
 
 
 [[initial]]
-== Create a resource representation class
+== 创建一个资源表述类
 
 Now that you've set up the project and build system, you can create your web service.
 
@@ -85,7 +85,7 @@ NOTE: As you see in steps below, Spring uses the http://wiki.fasterxml.com/Jacks
 Next you create the resource controller that will serve these greetings.
 
 
-== Create a resource controller
+== 创建一个Controller类
 
 In Spring's approach to building RESTful web services, HTTP requests are handled by a controller. These components are easily identified by the http://docs.spring.io/spring/docs/{spring_version}/javadoc-api/org/springframework/web/bind/annotation/RestController.html[`@RestController`] annotation, and the `GreetingController` below handles `GET` requests for `/greeting` by returning a new instance of the `Greeting` class:
 
