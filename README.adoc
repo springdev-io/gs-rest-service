@@ -6,24 +6,24 @@
 :icons: font
 :source-highlighter: prettify
 
-This guide walks you through the process of creating a "hello world" link:/understanding/REST[RESTful web service] with Spring.
+本指南将带你通过创建一个“Hello World”应用来理解link:/understanding/REST[RESTful web service]与Spring。
 
 == 你将构建什么
 
-You'll build a service that will accept HTTP GET requests at:
+你将创建一个Web服务介绍HTTP GET请求如下：
 
 ----
 http://localhost:8080/greeting
 ----
 
-and respond with a link:/understanding/JSON[JSON] representation of a greeting:
+并且响应返回如下问候内容link:/understanding/JSON[JSON]：
 
 [source,json]
 ----
 {"id":1,"content":"Hello, World!"}
 ----
 
-You can customize the greeting with an optional `name` parameter in the query string:
+你可以通过设置可选查询参数``name``：
 
 ----
 http://localhost:8080/greeting?name=User
@@ -120,7 +120,7 @@ Although it is possible to package this service as a traditional link:/understan
 `src/main/java/hello/Application.java`
 [source,java]
 ----
-include::https://raw.githubusercontent.com/springdev-io/gs-rest-service/master/complete/src/main/java/hello/Application.java
+include::https://raw.githubusercontent.com/springdev-io/gs-rest-service/master/complete/src/main/java/hello/Application.java[]
 ----
 
 include::https://raw.githubusercontent.com/springdev-io/getting-started-macros/master/spring-boot-application.adoc[]
